@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- *main - Put your comment here
+ * main - Put your comment here
  *
  * Return: 0 (succeeded)
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	Return (0);
 }
