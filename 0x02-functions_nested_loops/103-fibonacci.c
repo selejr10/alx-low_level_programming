@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - A function that prints sum of Even
- * fibronacci numbers less than 4000000
- *
- * Return: Nothing
+ * main - Prints the sum of Even Fibronacci numbers
+ * less than 4000000
+ * Return: Nothing!
  */
 
 int main(void)
@@ -22,6 +21,6 @@ int main(void)
 	j = k - j;
 	++i
 	}
-	printf("%ld\n", sum)
+	printf("%ld\n", sum);
 	return (0);
 }
