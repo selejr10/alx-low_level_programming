@@ -10,7 +10,7 @@
 
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit;
+	int p, d, n, len, r, digit;
 
 	p = 0;
 	d = 0;
@@ -32,7 +32,7 @@ int _atoi(char *s)
 			if (d % 2)
 				digit = -digit;
 			n = n * 10 + digit;
-			f = 1;
+			r = 1;
 			if (s[p + 1] < '0' || s[p + 1] > '9')
 				break;
 			r = 0;
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 {
 	int result, num1, num2;
 
-	if (argc < 3 || arc > 3)
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
