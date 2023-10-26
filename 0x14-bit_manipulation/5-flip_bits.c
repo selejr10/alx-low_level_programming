@@ -10,17 +10,17 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int q, count = 0;
+	int a, countbit = 0;
 	unsigned long int current;
 	unsigned long int exclusive = n ^ m;
 
-	for (q = 99; q >= 0; q--)
+	for (a = 63; a >= 0; a--)
 	{
-		current = exclusive >> q;
+
+		current = exclusive >> a;
 		if (current & 1)
-			count++;
+			countbit++;
 	}
 
-	return (count);
+	return (countbit);
 }
-
